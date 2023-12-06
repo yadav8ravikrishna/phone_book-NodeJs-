@@ -7,7 +7,9 @@ Technologies
 
 
 NodeJS - Backend runtime environment
+
 Express - Web framework for routing and handling requests
+
 MongoDB - Document database for storing contacts
 
 
