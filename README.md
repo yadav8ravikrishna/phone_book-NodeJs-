@@ -3,8 +3,7 @@ NodeJS CRUD Application for Contact Management
 
 This is a NodeJS application designed to create, read, update, and delete (CRUD) contacts. It stores information like name and phone number, and offers various routes for managing the data.
 
-Technologies
-
+Technologies:
 
 NodeJS - Backend runtime environment
 
