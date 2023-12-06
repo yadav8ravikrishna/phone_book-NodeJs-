@@ -1,66 +1,68 @@
-Node.js CRUD Project - Contact Management
+Node.js CRUD Project - Contact Management System
 Overview
-This Node.js CRUD (Create, Read, Update, Delete) project is designed to manage contacts, storing their name and phone number. The project provides a set of API endpoints for performing various operations on the contact records.
+This Node.js CRUD (Create, Read, Update, Delete) project is a simple Contact Management System that allows users to maintain a record of contacts with their name and phone number. The project provides various routes to perform CRUD operations on the contacts.
 
-Features
-Add a New Contact: Adds a new contact to the system with a specified name and phone number.
-Find Contact by ID: Retrieves contact details based on the provided contact ID.
-Get All Contacts: Fetches a list of all contacts stored in the system.
-Search Contact by Name: Searches for contacts based on the provided name.
-Update Contact: Modifies the details of a contact identified by its ID.
-Delete Contact: Removes a contact from the system using its ID.
+Project Structure
+The project is structured with the following components:
 
-Installation
+controllers: Contains the logic for handling different CRUD operations.
 
-Clone the repository:
+routes: Defines the API routes for creating, retrieving, updating, and deleting contacts.
+
+API Routes
+1. Add a New Contact
+Route: POST /addContact
+
+Description: Adds a new contact to the system.
+
+2. Find a Contact by ID
+Route: GET /findContact/:contactId
+
+Description: Retrieves a contact based on the provided contact ID.
+
+3. Get All Contacts
+Route: GET /getAllContacts
+
+Description: Retrieves a list of all contacts in the system.
+
+4. Search Contact by Name
+Route: GET /findContactByName
+
+Description: Searches for contacts based on the provided name.
+
+5. Update a Contact
+Route: PATCH /editContact/:contactId
+
+Description: Modifies the information of an existing contact based on the provided contact ID.
+
+6. Delete a Contact
+Route: DELETE /deleteContact/:contactId
+
+Description: Deletes a contact from the system based on the provided contact ID.
+
+Getting Started
+Clone the repository to your local machine.
+
+bash
+Copy code
 git clone <repository-url>
-cd nodejs-crud-contact
+Install dependencies.
 
-
-Install dependencies:
+bash
+Copy code
 npm install
+Run the project.
 
-
-Set up the database:
-
-Create a database and configure the connection in config/database.js.
-
-Run the application:
+bash
+Copy code
 npm start
-The application will be accessible at http://localhost:8000 by default.
+Access the API using the defined routes.
 
-API Endpoints
+Dependencies
+Express: A web application framework for Node.js.
+Body-parser: Middleware for parsing incoming request bodies.
+Mongoose: MongoDB object modeling tool designed to work in an asynchronous environment.
+Note
+Ensure you have a MongoDB server running, and update the database connection configuration in the project accordingly.
 
-Add a New Contact
-Endpoint: POST /addContact
-Request Body:
-{
-  "name": "John Doe",
-  "phoneNumber": "123-456-7890"
-}
-
-Find Contact by ID
-Endpoint: GET /findContact/:contactId
-
-Get All Contacts
-Endpoint: GET /getAllContacts
-
-Search Contact by Name
-Endpoint: GET /findContactByName
-Query Parameters:
-name: Name to search for.
-
-Update Contact
-Endpoint: PATCH /editContact/:contactId
-Request Body (Example):
-
-{
-  "phoneNumber": "987-654-3210"
-}
-
-Delete Contact
-Endpoint: DELETE /deleteContact/:contactId
-Technologies Used
-Node.js
-Express.js
-MongoDB
+Feel free to explore and customize the project to meet your specific requirements!
