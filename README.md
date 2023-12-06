@@ -50,3 +50,8 @@ PATCH /phonebook/editContact/123
 
 Delete a contact:
 DELETE /phonebook/deleteContact/456
+
+
+This project provides a basic CRUD implementation for contact management. Feel free to extend it with additional features like authentication, authorization, and data validation.
+
+Happy coding!
