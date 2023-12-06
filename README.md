@@ -12,15 +12,20 @@ Express - Web framework for routing and handling requests
 MongoDB - Document database for storing contacts
 
 
-Routes
+Routes:
 POST /addContact: Creates a new contact. Requires name and phone number in the request body.
+
 GET /findContact/:contactId: Retrieves a specific contact by its ID.
+
 GET /getAllContacts: Retrieves all contacts.
+
 GET /findContactByName: Searches for contacts by name. Requires a name query parameter.
+
 PATCH /editContact/:contactId: Updates an existing contact. Requires contact ID and updated name/phone number in the request body.
+
 DELETE /deleteContact/:contactId: Deletes a contact by its ID.
 
-Installation and Usage
+Installation and Usage:
 Clone the repository.
 Install dependencies: npm install.
 Start the server: npm start.
